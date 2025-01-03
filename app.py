@@ -10,7 +10,7 @@ UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
-api_key = "AIzaSyCBZcIFlUoHfcOObHHYVzcizN2X7GPyYgE"
+api_key = "API_KEY"
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-1.5-flash")
 MASTER_PROMPT = "generate a summary"
